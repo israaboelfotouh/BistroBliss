@@ -1,0 +1,42 @@
+nav {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0 40px;
+  margin-top: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.active {
+  padding: 4px 16px;
+  border-radius: 34px;
+  background-color: #dbdfd0;
+  transition: all 0 3s;
+}
+nav button {
+  padding: 12px 24px;
+  background-color: transparent;
+  border-radius: 118px;
+  border: 1.5px solid #2c2f24;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+nav button:hover {
+  background-color: #ad343e;
+  border: 0;
+  color: white;
+  transform: scale(1.1);
+}

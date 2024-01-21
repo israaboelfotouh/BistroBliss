@@ -1,0 +1,67 @@
+header {
+  background-color: #474747;
+  color: #f9f9f7;
+  width: 100%;
+}
+.header_contant {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header_right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.header_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icone_header_right {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.header_right p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.header_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.heaser_left_icone {
+  width: 27px;
+  height: 27px;
+  background-color: #f9f9f71f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header_right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .header_contact {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .header_right p {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+}

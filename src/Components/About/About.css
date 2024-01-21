@@ -1,0 +1,201 @@
+.AboutBg {
+  background: url(../../Img/aboutbg.png);
+  width: 100%;
+  height: 690px;
+  padding-bottom: 40px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.About_content {
+  width: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.About_content h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60.5px;
+  margin-top: 20px;
+}
+.map {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 75px;
+  padding: 80px 0;
+}
+.map-item {
+  display: flex;
+  gap: 24px;
+}
+.data_data h4 {
+  color: #2c2f24;
+  margin-bottom: 16px;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+.data_data p {
+  color: #414536;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* section */
+
+.little {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.little img {
+  width: 40%;
+}
+.little_content {
+  width: 50%;
+}
+.little_content h1 {
+  color: #2c2f24;
+  font-family: "Playfair Display";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60.5px;
+  margin-bottom: 20px;
+}
+.little_content p {
+  color: #414536;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+
+.little_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.little_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #dbdfd0;
+  background: #fff;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 0;
+}
+.little_item h2 {
+  color: #2c2f24;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60.5px;
+  margin-bottom: 15px;
+}
+.little_item p {
+  color: #414536;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.Cusmap {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.customer {
+  margin-bottom: 80px;
+}
+.customer h1 {
+  color: #2c2f24;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60.5px;
+  margin-bottom: 64px;
+}
+
+.customer_item {
+  border-radius: 12px;
+  background: #f9f9f7;
+  padding: 10px;
+}
+.customertitle {
+  color: #ad343e;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.72px;
+  margin-bottom: 24px;
+}
+.customerdis {
+  color: #414536;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 32px;
+  opacity: 0.7;
+  background: #dbdfd0;
+}
+.mabCustomer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.mabCustomer img {
+  width: 60px;
+  height: 60px;
+}
+.customername {
+  color: #2c2f24;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.customerjob {
+  color: #414536;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
