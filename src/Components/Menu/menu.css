@@ -122,6 +122,11 @@ svg {
 }
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
   .ourMenu {
+    width: 90%;
+    transform: translateX(0);
+    margin: auto;
+  }
+  .ourMenu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +179,7 @@ svg {
   /* section1 */
 
   .ourMenu {
-    width: 80%;
+    width: 90%;
     transform: translateX(0);
     margin: auto;
   }

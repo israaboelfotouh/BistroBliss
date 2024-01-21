@@ -16,6 +16,10 @@ nav ul li a {
   text-transform: capitalize;
   font-size: 16px;
 }
+.menu-icon {
+  display: none;
+}
+
 .active {
   padding: 4px 16px;
   border-radius: 34px;
@@ -39,4 +43,116 @@ nav button:hover {
   border: 0;
   color: white;
   transform: scale(1.1);
+}
+
+.logohome {
+  width: 25%;
+}
+
+.nav-links.open {
+  display: block;
+}
+.active-link {
+  padding: 4px 16px;
+  border-radius: 34px;
+  background-color: #dbdfd0;
+  transition: all 0.3s;
+}
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  nav {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 0 15px;
+    margin-top: 15px;
+  }
+  .logohome {
+    width: 25%;
+  }
+  nav button {
+    padding: 8px 16px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1.5px solid #2c2f24;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+}
+/* phone */
+/* phone */
+/* phone */
+@media only screen and (max-width: 700px) {
+  nav {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .logohome {
+    width: 25%;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 0 15px;
+    margin-top: 15px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  nav ul.open {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 70px 0;
+  }
+
+  nav ul li {
+    margin-bottom: 20px;
+  }
+
+  nav button {
+    display: flex;
+  }
+
+  body {
+    margin-top: 70px;
+  }
 }

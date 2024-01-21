@@ -1,5 +1,8 @@
 import React from "react";
 import "./Home.css";
+import customer1 from "../../Img/customer1.png";
+import customer2 from "../../Img/customer2.png";
+import customer3 from "../../Img/customer3.png";
 import healthy from "../../Img/ImgHealthy.png";
 import fastes1 from "../../Img/fastFood1.png";
 import fastes2 from "../../Img/FastFood2.png";
@@ -13,6 +16,32 @@ import {
 
 import { faClock, faBookmark } from "@fortawesome/free-regular-svg-icons";
 export default function Home() {
+  const customer = [
+    {
+      title: " “The best restaurant” ",
+      description:
+        "Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.",
+      img: customer1,
+      username: "Sophire Robson",
+      job: "Los Angeles, CA",
+    },
+    {
+      title: " “Simply delicious” ",
+      description:
+        "Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.",
+      img: customer2,
+      username: "Matt Cannon",
+      job: "San Diego, CA",
+    },
+    {
+      title: " “One of a kind restaurant” ",
+      description:
+        "The culinary experience at place is first to none. The atmosphere is vibrant, the food - nothing short of extraordinary. The food was the highlight of our evening. Highly recommended.",
+      img: customer3,
+      username: "Andy Smith",
+      job: "San Francisco, CA",
+    },
+  ];
   return (
     <>
       <section className="bg_home">
@@ -104,6 +133,33 @@ export default function Home() {
               <p>Online Services Available</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="container customer">
+        <div>
+          <h1>What Our Customers Say</h1>
+        </div>
+
+        <div className="Cusmap">
+          {customer.map((item, index) => (
+            <div key={index} className="customer_item">
+              <div>
+                <div>
+                  <p className="customertitle">{item.title}</p>
+                  <p className="customerdis">{item.description}</p>
+                  <div className="line"></div>
+                </div>
+                <div className="mabCustomer">
+                  <img src={item.img} alt="img1" />
+                  <div>
+                    <p className="customername">{item.username}</p>
+                    <p className="customerjob">{item.job}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </>

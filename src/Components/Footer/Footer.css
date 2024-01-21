@@ -103,11 +103,11 @@ ul li {
   }
   .footer_img {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto;
     margin: auto;
-    gap: 30px;
+    /* gap: 30px; */
   }
-  .footer_img img {
+  /* .footer_img img {
     width: 70%;
-  }
+  } */
 }
