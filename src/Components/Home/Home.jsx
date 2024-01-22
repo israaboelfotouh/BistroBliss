@@ -13,7 +13,7 @@ import {
   faEnvelope,
   faChartBar,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { useNavigate } from "react-router-dom";
 import { faClock, faBookmark } from "@fortawesome/free-regular-svg-icons";
 export default function Home() {
   const customer = [
@@ -42,6 +42,11 @@ export default function Home() {
       job: "San Francisco, CA",
     },
   ];
+  const navigate = useNavigate();
+
+  const handleBookButtonClick = () => {
+    navigate("/book");
+  };
   return (
     <>
       <section className="bg_home">
@@ -51,8 +56,12 @@ export default function Home() {
             Discover delectable cuisine and unforgettable moments in our
             welcoming, culinary haven.
           </p>
-          <button className="btn1">Book A Table</button>
-          <button className="btn2">Explore Menu</button>
+          <div>
+            <button onClick={handleBookButtonClick} className="btn1">
+              Book A Table
+            </button>
+            <button className="btn2">Explore Menu</button>
+          </div>
         </div>
       </section>
 

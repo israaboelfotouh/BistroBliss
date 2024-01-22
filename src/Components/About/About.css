@@ -146,8 +146,7 @@
 .customer_item {
   border-radius: 12px;
   background: #f9f9f7;
-  padding: 10px;
-  border: 1px solid #dbdfd0;
+  padding: 0px 10px;
 }
 .customertitle {
   color: #ad343e;
@@ -295,7 +294,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    border: 1px solid #dbdfd0;
+    /* border: 1px solid #dbdfd0; */
     background: #fff;
     flex-direction: column;
     text-align: center;

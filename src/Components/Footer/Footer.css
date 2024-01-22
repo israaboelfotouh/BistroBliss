@@ -28,6 +28,7 @@ footer h3 {
   font-weight: 300;
   line-height: 24px;
 }
+
 .footer_left {
   width: 25%;
   display: grid;
@@ -57,11 +58,32 @@ ul li {
   line-height: 24px;
   margin-bottom: 20px;
 }
+footer ul li:hover {
+  color: white;
+  cursor: pointer;
+}
 
 .footer_img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
+}
+.logofooter {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.logofooter p {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 32.67px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 29.333px;
+  letter-spacing: -0.4px;
+  cursor: pointer;
 }
 /* tablet */
 @media only screen and (min-width: 700px) and (max-width: 1024px) {

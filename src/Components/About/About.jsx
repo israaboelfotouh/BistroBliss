@@ -362,7 +362,7 @@ export default function About() {
           {customer.map((item, index) => (
             <div key={index} className="customer_item">
               <div>
-                <div>
+                <div className="customers">
                   <p className="customertitle">{item.title}</p>
                   <p className="customerdis">{item.description}</p>
                   <div className="line"></div>

@@ -51,6 +51,13 @@
   line-height: 24px;
   margin-right: 20px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.btn1:hover {
+  background-color: transparent;
+  border-radius: 118px;
+  border: 1.5px solid #2c2f24;
+  color: #2c2f24;
 }
 .btn2 {
   padding: 12px 24px;
@@ -63,6 +70,23 @@
   line-height: 24px;
   margin-right: 20px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn2:hover {
+  padding: 12px 24px;
+  background-color: #ad343e;
+  border: 0;
+  transform: scale(1.1);
+  border-radius: 118px;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 /* section2 */
@@ -149,6 +173,13 @@
   font-weight: 700;
   line-height: 24px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.Healthy_left button:hover {
+  background-color: #ad343e;
+  color: white;
+  border: 0;
+  transform: scale(1.1);
 }
 
 /* section3 */
@@ -371,7 +402,14 @@ img {
 /* phone */
 @media only screen and (max-width: 700px) {
   /* section1 */
-
+  .bg_home {
+    background-image: url("../../Img/homebgـphone.png");
+    width: 100%;
+    height: 100vh;
+    background-position: calc(50);
+    align-items: center;
+    text-align: center;
+  }
   .bg_contant {
     width: 80%;
     display: flex;
@@ -412,12 +450,11 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    margin-right: 20px;
     cursor: pointer;
     margin-bottom: 20px;
   }
   .btn2 {
-    padding: 12px 24px;
+    padding: 10px 20px;
     background-color: transparent;
     border-radius: 118px;
     border: 1.5px solid #2c2f24;
@@ -425,9 +462,9 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    margin-right: 20px;
     cursor: pointer;
   }
+
   /* section2 */
 
   .Healthy_right {

@@ -66,6 +66,16 @@
   border: 1px solid #dbdfd0;
   background: #fff;
   padding: 14px 0;
+  transition: all 0.3s;
+}
+input {
+  transition: all 0.3s;
+  padding: 0px 50px;
+}
+input:focus {
+  transform: scale(1.1);
+  border: 1px solid #ad343e;
+  outline: 0;
 }
 .form button {
   border: 0;
@@ -77,6 +87,10 @@
   gap: 10px;
   background: #ad343e;
   color: #ffffff;
+  transition: all 0.3s;
+}
+.form button:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
