@@ -18,11 +18,16 @@ export default function Contact() {
           <div className="form_grid_contact">
             <div className="form2">
               <label>Name</label>
-              <input />
+              <input
+                type="text"
+                pattern="[A-Za-z]+"
+                required
+                placeholder="Enter Name"
+              />
             </div>
             <div className="form2">
               <label>Email</label>
-              <input />
+              <input type="email" required placeholder="Enter email" />
             </div>
 
             <div className="form2 itemform2">

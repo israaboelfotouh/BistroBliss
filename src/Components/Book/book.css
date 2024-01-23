@@ -61,22 +61,23 @@
   grid-column-start: 1;
   grid-column-end: 3;
 }
+.itemform select {
+  padding: opx 10px;
+  border-radius: 72px;
+  border: 1px solid #dbdfd0;
+  background: #fff;
+  padding: 14px 12px;
+  transition: all 0.3s;
+}
+
 .form input {
   border-radius: 72px;
   border: 1px solid #dbdfd0;
   background: #fff;
-  padding: 14px 0;
+  padding: 14px 12px;
   transition: all 0.3s;
 }
-input {
-  transition: all 0.3s;
-  padding: 0px 50px;
-}
-input:focus {
-  transform: scale(1.1);
-  border: 1px solid #ad343e;
-  outline: 0;
-}
+
 .form button {
   border: 0;
   border-radius: 72px;

@@ -43,6 +43,7 @@
   outline: 0;
   padding: 12px 24px;
   background-color: #ad343e;
+  border: 1.5px solid transparent;
   border-radius: 118px;
   color: white;
   font-size: 16px;
@@ -58,6 +59,7 @@
   border-radius: 118px;
   border: 1.5px solid #2c2f24;
   color: #2c2f24;
+  transform: scale(1.1);
 }
 .btn2 {
   padding: 12px 24px;
@@ -76,7 +78,8 @@
 .btn2:hover {
   padding: 12px 24px;
   background-color: #ad343e;
-  border: 0;
+  border: 1.5px solid transparent;
+
   transform: scale(1.1);
   border-radius: 118px;
   color: white;
@@ -84,7 +87,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-
+  margin-right: 20px;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -167,7 +170,7 @@
   padding: 12px 24px;
   background-color: transparent;
   border-radius: 118px;
-  border: 1.5px solid #2c2f24;
+  border: 1.5px solid #2c2f24c0;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -177,8 +180,9 @@
 }
 .Healthy_left button:hover {
   background-color: #ad343e;
+  border: 1.5px solid transparent;
   color: white;
-  border: 0;
+
   transform: scale(1.1);
 }
 

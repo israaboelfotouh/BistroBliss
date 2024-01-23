@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
 import "../Home/Home.css";
 import "./About.css";
 import imghome from "../../Img/Imghome.png";
@@ -249,6 +250,15 @@ export default function About() {
       job: "San Francisco, CA",
     },
   ];
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   return (
     <>
@@ -298,6 +308,7 @@ export default function About() {
             height="100"
             viewBox="0 0 106 106"
             fill="none"
+            onClick={openModal}
           >
             <circle cx="53" cy="53" r="53" fill="white" />
             <path
@@ -308,6 +319,24 @@ export default function About() {
           <h2>Feel the authentic & original taste from us</h2>
         </div>
       </section>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        className="modle"
+
+        // contentLabel="Video Modal"
+      >
+        <iframe
+          title="YouTube Video"
+          className="popup"
+          src="https://www.youtube.com/embed/QyhwSYhX09s?si=tMBAnWJjX0UOJJAW"
+          // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+        <button onClick={closeModal} className="close">
+          X
+        </button>
+      </Modal>
 
       <div className="map container">
         {data.map((item, index) => (

@@ -7,6 +7,7 @@ header {
   padding: 5px 0;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .header_right {
   display: grid;
@@ -37,7 +38,7 @@ header {
   align-items: center;
   gap: 10px;
 }
-.heaser_left_icone {
+.header_left_icone {
   width: 27px;
   height: 27px;
   background-color: #f9f9f71f;
@@ -46,7 +47,18 @@ header {
   justify-content: center;
   align-items: center;
 }
-
+.twitter:hover {
+  background-color: #039ef6;
+}
+.facebook:hover {
+  background-color: #1877f2;
+}
+.instgram:hover {
+  background: linear-gradient(45deg, #405de6, #833ab4, #ff5252, #ff8c1a);
+}
+.github:hover {
+  background-color: rgb(0, 0, 0);
+}
 @media screen and (max-width: 768px) {
   .header_right {
     display: flex;

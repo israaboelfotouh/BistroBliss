@@ -1,6 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Footer.css";
-import logowhite from "../../Img/LogoWhite.png";
 import footerimg1 from "../../Img/footerImg1.png";
 import footerimg2 from "../../Img/footerImg2.png";
 import footerimg3 from "../../Img/footerImg3.png";
@@ -42,12 +42,17 @@ const logofooter = (
   </svg>
 );
 export default function Footer() {
+  const navigate = useNavigate();
+  const handleHomeButtonClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/");
+  };
   return (
     <footer>
       <div className="container ">
         <div className="footer_contant ">
           <div className="footer_logo">
-            <div className="logofooter">
+            <div className="logofooter" onClick={handleHomeButtonClick}>
               {logofooter}
 
               <p>Bistro Bliss</p>
@@ -58,16 +63,16 @@ export default function Footer() {
                 certainty and pride to for our company and.
               </p>
               <div className="footer_left">
-                <div className="footer_left_icone">
+                <div className="footer_left_icone twitter">
                   <FontAwesomeIcon icon={faTwitter} />
                 </div>
-                <div className="footer_left_icone">
+                <div className="footer_left_icone facebook">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </div>
-                <div className="footer_left_icone">
+                <div className="footer_left_icone instgram">
                   <FontAwesomeIcon icon={faInstagram} />
                 </div>
-                <div className="footer_left_icone">
+                <div className="footer_left_icone github">
                   <FontAwesomeIcon icon={faGithub} />
                 </div>
               </div>

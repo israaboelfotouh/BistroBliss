@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./Nabnar.css";
-import navlogo from "../../Img/Logologo_navbar.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,6 +10,9 @@ export default function Navbar() {
   const navigate = useNavigate();
   const handleBookButtonClick = () => {
     navigate("/book");
+  };
+  const handleHomeButtonClick = () => {
+    navigate("/");
   };
 
   const handleNavLinkClick = () => {
@@ -57,7 +59,7 @@ export default function Navbar() {
   return (
     <div className="container">
       <nav>
-        <div className="logohome">
+        <div className="logohome" onClick={handleHomeButtonClick}>
           <div className="logonav"> {logo}</div>
           <p>Bistro Bliss</p>
         </div>

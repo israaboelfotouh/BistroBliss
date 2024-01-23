@@ -22,23 +22,40 @@ export default function Book() {
           <div className="form_grid">
             <div className="form">
               <label>Date</label>
-              <input />
+              <input type="date" required />
             </div>
             <div className="form">
-              <label>Date</label>
-              <input />
+              <label>Time</label>
+              <input type="time" placeholder="HH:MM" required />
             </div>
             <div className="form">
-              <label>Date</label>
-              <input />
+              <label>Name</label>
+              <input
+                type="text"
+                pattern="[A-Za-z]+"
+                required
+                placeholder="Enter Name"
+              />
             </div>
             <div className="form">
-              <label>Date</label>
-              <input />
+              <label>Phone</label>
+              <input
+                type="tel"
+                placeholder="Enter phone"
+                pattern="[0-9]{10}"
+                required
+              />
             </div>
             <div className="form itemform">
-              <label>person</label>
-              <input />
+              <label>Total Person</label>
+              <select>
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value="5">5 people</option>
+                <option value="more">More</option>
+              </select>
             </div>
             <div className="form itemform">
               <button>Book A Table</button>
