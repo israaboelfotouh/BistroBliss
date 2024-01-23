@@ -60,10 +60,15 @@ header {
   background-color: rgb(0, 0, 0);
 }
 @media only screen and (max-width: 700px) {
+  header {
+    background-color: #474747;
+    color: #f9f9f7;
+    width: 100%;
+  }
   .header_right {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 1px;
   }
 
   .header_right p {
@@ -76,8 +81,7 @@ header {
     display: flex;
     justify-content: start;
     align-items: center;
-  }
-  .header_contact:hover {
+    padding: 5px 0;
     cursor: pointer;
   }
 }
