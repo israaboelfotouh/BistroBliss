@@ -59,21 +59,25 @@ header {
 .github:hover {
   background-color: rgb(0, 0, 0);
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   .header_right {
     display: flex;
     flex-direction: column;
     gap: 5px;
+  }
+
+  .header_right p {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    cursor: pointer;
   }
   .header_contact {
     display: flex;
     justify-content: start;
     align-items: center;
   }
-  .header_right p {
-    font-size: 16px;
-    font-weight: 200;
-    line-height: 24px;
-    margin-bottom: 0;
+  .header_contact:hover {
+    cursor: pointer;
   }
 }

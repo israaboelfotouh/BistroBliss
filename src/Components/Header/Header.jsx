@@ -23,13 +23,21 @@ export default function Header() {
       <header>
         <div className="header_contant container">
           <div className="header_right">
-            <div className="header_contact" onClick={handlePhoneClick}>
+            <div
+              className="header_contact"
+              onClick={handlePhoneClick}
+              onTouchStart={handlePhoneClick}
+            >
               <div className="icone_header_right">
                 <FontAwesomeIcon icon={faPhone} />
               </div>
               <p>(414) 857 - 0107</p>
             </div>
-            <div className="header_contact" onClick={handleEmailClick}>
+            <div
+              className="header_contact"
+              onClick={handleEmailClick}
+              onTouchStart={handleEmailClick}
+            >
               <div className="icone_header_right">
                 <FontAwesomeIcon icon={faEnvelope} />
               </div>

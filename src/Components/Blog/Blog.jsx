@@ -1,7 +1,7 @@
 import React from "react";
 import "./Blog.css";
 import blog1 from "../../Img/blog1.png";
-import blog2 from "../../Img/blog2.png";
+// import blog2 from "../../Img/blog2.png";
 import blog3 from "../../Img/blog3.png";
 import blog4 from "../../Img/blog4.png";
 import blog5 from "../../Img/blog5.png";
