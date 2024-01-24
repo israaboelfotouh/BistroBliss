@@ -89,9 +89,11 @@
   background: #ad343e;
   color: #ffffff;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .form button:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1024px) {

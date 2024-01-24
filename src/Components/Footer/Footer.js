@@ -12,6 +12,7 @@ import {
   faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { tab } from "@testing-library/user-event/dist/tab";
 const logofooter = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +48,41 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
     navigate("/");
   };
+  const handleAboutOnClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/About");
+  };
+  const handleMenuOnClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/Menu");
+  };
+  const handleBlogOnClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/pages");
+  };
+  const handleContactOnClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/Contact");
+  };
+  const handleTwitterClick = () => {
+    // this tab
+    // window.location.href =
+    //   "https://x.com/Israaboelfotouh?t=573R_Jk5j_rwVn9H88Jcnw&s=09 ";
+    // new tab
+    window.open(
+      "https://x.com/Israaboelfotouh?t=573R_Jk5j_rwVn9H88Jcnw&s=09",
+      "_blank"
+    );
+  };
+  const handleFacebookClick = () => {
+    window.open("https://www.facebook.com/israaboelfotouh", "_blank");
+  };
+  const handleInstgramClick = () => {
+    window.open("https://www.instagram.com/israaboelfotouh/", "_blank");
+  };
+  const handleGitClick = () => {
+    window.open("https://github.com/israaboelfotouh", "_blank");
+  };
   return (
     <footer>
       <div className="container ">
@@ -63,16 +99,28 @@ export default function Footer() {
                 certainty and pride to for our company and.
               </p>
               <div className="footer_left">
-                <div className="footer_left_icone twitter">
+                <div
+                  className="footer_left_icone twitter"
+                  onClick={handleTwitterClick}
+                >
                   <FontAwesomeIcon icon={faTwitter} />
                 </div>
-                <div className="footer_left_icone facebook">
+                <div
+                  className="footer_left_icone facebook"
+                  onClick={handleFacebookClick}
+                >
                   <FontAwesomeIcon icon={faFacebookF} />
                 </div>
-                <div className="footer_left_icone instgram">
+                <div
+                  className="footer_left_icone instgram"
+                  onClick={handleInstgramClick}
+                >
                   <FontAwesomeIcon icon={faInstagram} />
                 </div>
-                <div className="footer_left_icone github">
+                <div
+                  className="footer_left_icone github"
+                  onClick={handleGitClick}
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </div>
               </div>
@@ -83,12 +131,12 @@ export default function Footer() {
             <h3>Pages</h3>
             <div>
               <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
+                <li onClick={handleHomeButtonClick}>Home</li>
+                <li onClick={handleAboutOnClick}>About</li>
+                <li onClick={handleMenuOnClick}>Menu</li>
                 <li>Pricing</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li onClick={handleBlogOnClick}>Blog</li>
+                <li onClick={handleContactOnClick}>Contact</li>
                 <li>Delivery</li>
               </ul>
             </div>

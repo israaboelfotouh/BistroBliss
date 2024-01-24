@@ -11,12 +11,36 @@ import {
 export default function Header() {
   const phoneNumber = "(414) 857 - 0107";
   const handlePhoneClick = () => {
-    window.location.href = `tel:${phoneNumber}`;
-  };
+    // window.location.href = `tel:${phoneNumber}`;
 
-  const emailAddress = "yummy@bistrobliss";
+    const link = document.createElement("a");
+    link.href = `tel:${phoneNumber}`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const emailAddress = "yummybistrobliss@gmail.com";
   const handleEmailClick = () => {
     window.location.href = `mailto:${emailAddress}`;
+  };
+  const handleTwitterClick = () => {
+    // this tab
+    // window.location.href =
+    //   "https://x.com/Israaboelfotouh?t=573R_Jk5j_rwVn9H88Jcnw&s=09 ";
+    // new tab
+    window.open(
+      "https://x.com/Israaboelfotouh?t=573R_Jk5j_rwVn9H88Jcnw&s=09",
+      "_blank"
+    );
+  };
+  const handleFacebookClick = () => {
+    window.open("https://www.facebook.com/israaboelfotouh", "_blank");
+  };
+  const handleInstgramClick = () => {
+    window.open("https://www.instagram.com/israaboelfotouh/", "_blank");
+  };
+  const handleGitClick = () => {
+    window.open("https://github.com/israaboelfotouh", "_blank");
   };
   return (
     <>
@@ -46,16 +70,25 @@ export default function Header() {
           </div>
 
           <div className="header_left">
-            <div className="header_left_icone twitter">
+            <div
+              className="header_left_icone twitter"
+              onClick={handleTwitterClick}
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </div>
-            <div className="header_left_icone facebook">
+            <div
+              className="header_left_icone facebook"
+              onClick={handleFacebookClick}
+            >
               <FontAwesomeIcon icon={faFacebookF} />
             </div>
-            <div className="header_left_icone instgram">
+            <div
+              className="header_left_icone instgram"
+              onClick={handleInstgramClick}
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </div>
-            <div className="header_left_icone github">
+            <div className="header_left_icone github" onClick={handleGitClick}>
               <FontAwesomeIcon icon={faGithub} />
             </div>
           </div>

@@ -120,6 +120,9 @@
   line-height: 24px;
   margin-bottom: 60px;
 }
+svg {
+  cursor: pointer;
+}
 
 .little_grid {
   display: grid;
